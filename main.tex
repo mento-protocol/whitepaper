@@ -290,11 +290,11 @@ In the Reserve Liquidity Strategy, the flash\hyp swaps work as follows:
   \item \textbf{Flash\hyp swap expand}\,: Traders have bought most of the USD.m.
         The strategy (i) mints just enough new USD.m and deposits it into the
         pool, (ii) simultaneously withdraws the oracle\hyp equivalent amount of
-        USDC from the Reserve.  The pool regains balance, the Reserve now holds
-        less USDC and more issued USD.m.
+        USDC from the pool and deposits it into the Reserve.  The pool regains balance, the Reserve now holds
+        more USDC.
   \item \textbf{Flash\hyp swap contract}\,: USD.m has accumulated.  The strategy
         burns the surplus USD.m in the same transaction and transfers the
-        equivalent USDC back to the Reserve.
+        equivalent amount of USDC from the Reserve to the pool.
 \end{itemize}
 \begin{figure}[ht]
     \centering
